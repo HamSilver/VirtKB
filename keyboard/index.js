@@ -338,10 +338,12 @@ class keyboard {
     }
 }
 
-let kb = null
-
 window.addEventListener("DOMContentLoaded", function () {
-    kb = new keyboard
+    const kb = new keyboard
+    if (kb.states.lang) {
+        //check
+        console.log(kb.states.lang)
+    }
 })
 
 console.log('Self-check: Score: 110\n- [x] Minimal scope\n    - [x] the generation of DOM elements is implemented (20)\n    - [x] pressing a key on a physical keyboard highlights the key on the virtual keyboard (10)\n- [x] Basic scope\n    - [x] switching keyboard layouts between English and another language is implemented. (15)\n    - [x] mouse clicks on buttons of the virtual keyboard or pressing buttons on a physical keyboard inputs characters to the input field (15)\n- [x] Extra scope\n    - [x] animation of pressing a key is implemented (15)\n- [x] Technical requirements\n    - [x] ESLint is used (10)\n    - [x] ES6 features are used (15)\n    - [x] Requirements to the repository, commits and pull request are met (10)')
