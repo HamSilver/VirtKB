@@ -146,7 +146,7 @@ h6 {
   width: 6%;
   height: 45px;
   background-color: #eee;
-  border: 0;
+  border: 1px solid #888;
   border-radius: 3px;
   box-shadow: -3px -2px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2) inset, -1px -1px 1px rgba(255, 255, 255, 0.8) inset;
   color: #777;
@@ -224,5 +224,8 @@ h6 {
   position: relative;
   top: 1px;
   box-shadow: none;
-  border: 1px solid #888;
+}
+.key--pressed:hover {
+  background-color: #efe;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -107,6 +107,17 @@ const keyboard = {
         console.log(event)
     },
 
+    _mouseClick(event) {
+        const e = event.target.closest('.key')
+        console.log(event)
+        if (!e.classList.contains('key--pressed')) {
+            e.classList.add('key--pressed')
+            setTimeout(() => {
+                e.classList.remove('key--pressed')
+            }, 100);
+        }
+    },
+
     _eventWatcher(event) {
         console.log(event)
     },
@@ -146,7 +157,7 @@ const keyboard = {
                 }
                 rdiv.append(keyButton)
                 keyButton.addEventListener('click', (e) => {
-                    this._eventWatcher(e)
+                    this._mouseClick(e)
                 })
             }
         }
