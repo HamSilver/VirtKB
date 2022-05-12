@@ -1,0 +1,30 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "Virtual keyboard",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamSilver/VirtKB.git"
+  },
+  "keywords": [
+    "js",
+    "keyboard"
+  ],
+  "author": "HamSilver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamSilver/VirtKB/issues"
+  },
+  "homepage": "https://github.com/HamSilver/VirtKB#readme"
+}
