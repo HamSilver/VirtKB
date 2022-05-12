@@ -89,7 +89,7 @@ class Keyboard {
     let newState = '';
     let lang = '';
     if (!toLang) {
-      // to other
+      // switch to other
       switch (this.states.lang) {
         case 'state0':
           newState = 'state2';
@@ -108,7 +108,7 @@ class Keyboard {
           lang = 'en';
       }
     } else {
-      // to selected
+      // switch to selected language
       lang = toLang;
       if (toLang === 'ru') {
         newState = 'state2';
@@ -159,10 +159,10 @@ class Keyboard {
           this.switchLang();
         }
         if (event.key === 'Enter') {
-          this.output.innerHTML = `${this.output.innerHTML}\n`;
+          this.output.innerHTML += '\n';
         }
         if (event.key === 'Tab') {
-          this.output.innerHTML = `${this.output.innerHTML}\t`;
+          this.output.innerHTML += '\t';
         }
         if (event.key === 'Backspace') {
           let s = this.output.innerHTML;
